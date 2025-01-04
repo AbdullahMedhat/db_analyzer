@@ -1,0 +1,16 @@
+<table>
+	<thead>
+		<tr>
+			<th>Table Name</th>
+			<th># of records</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @table_names.each do |table_name| %>
+			<tr>
+				<td><%= table_name.classify %></td>
+				<td><%= table_name.classify.constantize.count %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

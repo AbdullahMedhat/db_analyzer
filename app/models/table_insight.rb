@@ -1,0 +1,2 @@
+class TableInsight < ApplicationRecord
+end
